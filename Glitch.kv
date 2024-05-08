@@ -1,0 +1,3573 @@
+WindowManager:
+    FirstWindow:
+    SecondWindow:
+    ThirdWindow:
+    FourthWindow:
+    FifthWindow:
+    SixthWindow:
+    SeventhWindow:
+    EightWindow:
+    NinthWindow:
+    TenthWindow:
+    TwelthWindow11:
+    TwelthWindow12:
+    TwelthWindow13:
+    TwelthWindow14:
+    TwelthWindow15
+    TwelthWindow16:
+    TwelthWindow21:
+    TwelthWindow22:
+    TwelthWindow23:
+    TwelthWindow24:
+    TwelthWindow26:
+    TwelthWindow27:
+    TwelthWindow28:
+    TwelthWindow29:
+    TwelthWindow31:
+    TwelthWindow32:
+    TwelthWindow33:
+    TwelthWindow34:
+    TwelthWindow35:
+    TwelthWindow41:
+    TwelthWindow42:
+    TwelthWindow43:
+    TwelthWindow44:
+    TwelthWindow45:
+    ThirteenthWindow11:
+    ThirteenthWindow12:
+    ThirteenthWindow13:
+    ThirteenthWindow14:
+    ThirteenthWindow15:
+    ThirteenthWindow16:
+    ThirteenthWindow17:
+    ThirteenthWindow18:
+    ThirteenthWindow19:
+    ThirteenthWindow21:
+    ThirteenthWindow22:
+    ThirteenthWindow23:
+    ThirteenthWindow24:
+    ThirteenthWindow25:
+    ThirteenthWindow26:
+    ThirteenthWindow27:
+    ThirteenthWindow28:
+    ThirteenthWindow29:
+    ThirteenthWindow31:
+    ThirteenthWindow32:
+    ThirteenthWindow33:
+    ThirteenthWindow34:
+    ThirteenthWindow35:
+    ThirteenthWindow36:
+    ThirteenthWindow37:
+    ThirteenthWindow38:
+    ThirteenthWindow39:
+    ThirteenthWindow41:
+    ThirteenthWindow42:
+    ThirteenthWindow43:
+    ThirteenthWindow44:
+    ThirteenthWindow45:
+    ThirteenthWindow46:
+    ThirteenthWindow47:
+    ThirteenthWindow48:
+    ThirteenthWindow49:
+    ThirteenthWindow51:
+    ThirteenthWindow52:
+    ThirteenthWindow53:
+    ThirteenthWindow54:
+    ThirteenthWindow55:
+    ThirteenthWindow56:
+    ThirteenthWindow57:
+    ThirteenthWindow58:
+    ThirteenthWindow59:
+    ThirteenthWindow61:
+    ThirteenthWindow62:
+    ThirteenthWindow63:
+    ThirteenthWindow64:
+    ThirteenthWindow65:
+    ThirteenthWindow66:
+    ThirteenthWindow67:
+    ThirteenthWindow68:
+    ThirteenthWindow69:
+    FourteenthWindow11:
+    FourteenthWindow12:
+    FourteenthWindow13:
+    FourteenthWindow14:
+    FourteenthWindow15:
+    FourteenthWindow16:
+    FourteenthWindow17:
+    FourteenthWindow2:
+    FourteenthWindow3:
+    FourteenthWindow4:
+
+
+
+
+<FirstWindow>:
+    name:"first"
+    #username:username
+    #output_label:output_label
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'first.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Welcome to Glitch"
+            font_size:78
+            font_name:"novem___.ttf"
+            font_color:'#000000'
+            valign:"top"
+        Label:
+            text:"Beware your choices decide your future\n                   Can you escape??"
+            font_size:36
+            font_name:"novem___.ttf"
+            font_color:'#FF0000'
+            valign:"top"
+
+        Button:
+            text:"Next"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            size_hint:(0.2,0.4)
+            pos_hint:{'center_x':0.9,'center_Y':0.3}
+            valign:"top"
+            on_press:app.root.current="second"
+
+<SecondWindow>:
+    cols:3
+    name:"second"
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Video:
+            source:"Video.mp4"
+            state:"play"
+            options:{'eos':'loop'}
+        Button:
+            text:"Next"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:'#000000'
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="3"
+<ThirdWindow>:
+    name:"3"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        #spacing:20
+        Label:
+            text:"\n\nYou are 19 and end up in an Escape Room game,\n\nComplete each room to survive...\n\nPlayers In The Room"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        Label:
+            #size_hint_x:0.2
+            text:"DR. Vikram Sinha\n\n# Smarter than you think he is"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+
+        Label:
+            text:"Winston Churchill\n\n# Retirement has lead him to a\n\n lot of free time, all he can think about is books\n\n"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        Label:
+            text:"\nAlisha Oberoi\n\n# Money can buy happiness"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        Label:
+            text:"\nEmma Hopkins\n\n# Don't judge a book buy its cover"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        Button:
+            text:"Next"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="4"
+
+<FourthWindow>:
+    name:"4"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    halign:"left"
+    valign:"top"
+    #size_hint_y:0.9
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Operation Room\n      #Sceen 1"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="5"
+
+<FifthWindow>:
+    name:'5'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'OR2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        #spacing:20
+        Label:
+            text:"You have entered the Operation room\n\n\tOBJECTIVE: Assemble the ECG monitor\n\nDr.Sinha: Ha! This is right up my alley, let me handle this one\n\n\n1.Let Dr.Sinha handle this objective\n\n2.Make equal contributuions in completing the objective"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_color:'#808080'
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        TextInput:
+            id:opt1
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_press:root.on_button_click()
+
+<SixthWindow>:
+    name:'6'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'OR2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nDr.Sinha: This will be done in a jiffy\n\nDr.Sinha stops working and stands still near the equipement tray in thought\n\nAlisha: Now do I have to pay you to work faster?\n\nDr.Sinha: Dont tell me how to do my work\n\nDr.Sinha picks up the scapel and starts working on the ECG monitor"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="7"
+
+
+<SeventhWindow>:
+    name:'7'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'OR2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"The ECG monitor is assembled\n\nThe monitor boots up and a message is displayed\n\n\n!!YOU HAVE COMPLETED THIS ROOM, NOW IT'S TIME TO ELIMINATE A PLAYER!!\n\n\nWho will you eliminate??\n\n1.Emma\n\n2.Dr.Sinha\n\n3.Winston\n\n4.Alisha"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        TextInput:
+            id:opt2
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<EightWindow>:
+    name:'8'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'OR2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nEmma starts working on the monitor while  Dr.Sinha picks up a scapel to fix the ECG\n\nWinston and Alisha start talking about Mary komm and her biography\n\nThe Monitor is assembled\n\n\nNEW OBJECTIVE: Connect the wires according to colour combinations to boot the monitor\n\nYou find 3 wires to connect to the system (black | white | blue)\n\n-The black wire kills the system\n\n-The white wire launches 'Guess the numebr' on the monitor\n\n-The blue wire's purpose is unknown"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+        TextInput:
+            id:opt3
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+
+
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<NinthWindow>:
+    name:'black'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'OR2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nThe monitor exploped!!\n\nYou are now stuck in the room!!"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<TenthWindow>:
+    name:'white'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'OR2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+
+        Label:
+            text:"\n\nMONITOR HAS BOOTED\n\nYou'll have to Guess the number to go ahead!!\n\n You will get only 5 chances so better be careful"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt4
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+
+            on_release:root.on_button_click()
+
+
+
+<TwelthWindow11>:
+    name:'1211'
+    halign:"left"
+    valign:"top"
+    #size_hint_y:0.9
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Library\n      #Sceen 2"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1212"
+
+<TwelthWindow12>:
+    name:'1212'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nDr.Sinha: Wait where did Emma go?\n\n**IN CRYPTIC NOISE**\n\nFrom the speakers: EACH ROUND CAN ONLY BE COMPLETED BY KILLING A PERSON, MAKE WISE CHOICES\n\n\nGAME STARTING..."
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1213"
+
+<TwelthWindow13>:
+    name:'1213'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"GUESS THE BOOK NAME\n\nYou have 3 guess to answer the right book\n\nEach wrong guess will take you closer to death\n\nMake careful choices\n\nHINT: The most famous detective book"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt5
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow14>:
+    name:"1214"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nYOU HAVE GUESSED THE RIGHT ANSWER\n\nYOU HAVE COMPLETED THIS ROOM\n\n\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Dr.Sinha|Alisha|Winston):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt6
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow15>:
+    name:'3rdchance'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nBeware, this is your LAST chance\n\nWinston: Wait the name of the book is on the tip of my tongue,\n\nI remember the name of the author Arthur Conan Doyle I guess"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt7
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow16>:
+    name:'1216'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nYOU HAVE DIED!!\n\nThe answer was: Sherlock Holmes\n\nNow you are stuck in the room"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<TwelthWindow21>:
+    name:'1221'
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Library\n      #Sceen 2"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1222"
+
+<TwelthWindow22>:
+    name:'1222'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nDr.Sinha: Wait where did Winston go?\n\n**IN CRYPTIC NOISE**\nfrom the speakers: EACH ROUND CAN ONLY BE COMPLETED BY KILLING A PERSON, MAKE WISE CHOICES\n\n"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1223"
+
+<TwelthWindow23>:
+    name:'1223'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nAlisha: Damnit! Winston would have been really helpful to clear this room\n\nAlisha looks at the speakers and shouts\n\n\nAlisha: HOW MUCH IS IT GONNA TAKE FOR YOU TO OPEN THE DOOR?! $10000?!\n\n\n1.Let Alisha keep biding with the speaker\n\n2.Stop her and solve the game"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt8
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow24>:
+    name:'1224'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nAlisha: $50000? Oh come on there has to be a price\n\n\n1.Let Alisha keep biding with the speaker\n\n2.Stop her and solve the game"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt9
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<TwelthWindow27>:
+    name:'1227'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nAlisha: Ok what about $100000\n\n\nTHE DOOR OPENS \n\n\nAlisha: I knew it, money can get me anything\n\nCONSIDERING THIS EXCEPTIONAL CASE, YOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Dr.Sinha | Alisha | Emma)"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt11
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow26>:
+    name:'1226'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nGUESS THE BOOK NAME\n\nYou have 3 guess to answer the right book\n\nEach wrong guess will take you closer to death\n\nMake careful choices\n\nHINT: The most famous detective book"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt10
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow28>:
+    name:"1228"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nYOU HAVE GUESSED THE RIGHT ANSWER\n\nYOU HAVE COMPLETED THIS ROOM\n\n\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Dr.Sinha|Alisha|Emma):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt12
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow29>:
+    name:'1229'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nBeware, this is your LAST chance\n\n"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt13
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow31>:  #when Dr. sinha is eliminated
+    name:"1231"
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Library\n      #Sceen 2"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1232"
+
+<TwelthWindow32>:
+    name:'1232'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nEmma: Wait where did Dr.Sinha go?\n\n**IN CRYPTIC NOISE**\n\nfrom the speakers: EACH ROUND CAN ONLY BE COMPLETED BY KILLING A PERSON, MAKE WISE CHOICES\n\n\nGAME STARTING..."
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1233"
+
+<TwelthWindow33>:
+    name:'1233'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nGUESS THE BOOK NAME\n\nYou have 3 guess to answer the right book\n\nEach wrong guess will take you closer to death\n\nMake careful choices\n\nHINT: The most famous detective book"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt14
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow34>:
+    name:'1234'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nBeware, this is your LAST chance\n\nWinston: Wait the name of the book is on the tip of my tongue,\n\nI remember the name of the author Arthur Conan Doyle I guess"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt15
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow35>:
+    name:'1235'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nYOU HAVE GUESSED THE RIGHT ANSWER\n\nYOU HAVE COMPLETED THIS ROOM\n\n\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Emma |Alisha |Winston):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt16
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow41>:
+    name:'1241'
+
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Library\n      #Sceen 2"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1242"
+
+<TwelthWindow42>:
+    name:'1242'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nDr.Sinha: Wait where did Alisha go?\n\n**IN CRYPTIC NOISE**\n\nfrom the speakers: EACH ROUND CAN ONLY BE COMPLETED BY KILLING A PERSON, MAKE WISE CHOICES"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1243"
+
+<TwelthWindow43>:
+    name:'1243'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nGUESS THE BOOK NAME\n\nYou have 3 guess to answer the right book\n\nEach wrong guess will take you closer to death\n\nMake careful choices\n\nHINT: The most famous detective book"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt17
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow44>:
+    name:'1244'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nBeware, this is your LAST chance\n\nWinston: Wait the name of the book is on the tip of my tongue,\n\nI remember the name of the author Arthur Conan Doyle I guess"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt18
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<TwelthWindow45>:
+    name:'1245'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'library.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\nYOU HAVE GUESSED THE RIGHT ANSWER\n\nYOU HAVE COMPLETED THIS ROOM\n\n\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Emma |Dr.Sinha |Winston):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt19
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"Pixeboy.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9,"center_y":0.2}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow11>: #alisha and winston are alive
+    name:'1311'
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Crime\n    #Sceen 3"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1312"
+
+<ThirteenthWindow12>:
+    name:'1312'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nYou have entered the crime room\n\nOBJECTIVE: Find the killer\n\nthere is a body lying on the ground, she has worn a blue dress and\n\nshe is holding keys in her hands that\n\nseem like house keys.\n\nClue:Her room and walk in closet were quite messy \n\nnot like a room which was unattended for a few days"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current='1313'
+
+<ThirteenthWindow13>:
+    name:'1313'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThere are Three suspects her husband, the neighbour and the maid.\n\nwho would you like to investigate??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt20
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<ThirteenthWindow14>:
+    name:'1314'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe Husband seems to have no idea how this happened\n\nAlisha:is anything missing??\n\nHusband:Yes, a total of 1,00,000$ is missing along with some jewelery\n\nAlisha:and what about your marriage\n\nHusband:we were happily married\n\nand later he also mentions that she was coming back from a trip.\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt21
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow15>:
+    name:'1315'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe neighbour calls himself her bestfriend\n\nHe mentions that Sara and her husband were not in good terms\n\nWinston:Why do say so??\n\nNeighbour: she used to tell how they used to fight all the time\n\nLater you find a paper where you get to know\n\nthat the neighbour her bestfriend actually\n\nInherits her shares a bit\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt22
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow16>:
+    name:'1316'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe maid once was caught before stealing\n\nKnown to be a greedy lady\n\nWhen talked to she denied the dispute between Sara and her husband\n\nAlisha:You know right that 1,00,000$ is also missing\n\nshe starts crying\n\nMaid:I got my lesson last time which was years ago I won't\n\ndo something like that again to my boss\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt23
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow17>:
+    name:'1317'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nWho do you think killed Sara Williamson??\n\nThink wisely you have only 2 chances"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt24
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow18>:
+    name:'1318'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE GUESSED THE RIGHT ANSWER\n\n\nYOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Alisha| Winston):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt25
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow19>:
+    name:'1319'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE DIED!!\n\nThe killer was: Husband\n\n\nGame Ended"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+<ThirteenthWindow21>: #alisha and Dr.Sinha
+    name:'1321'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    halign:"left"
+    valign:"top"
+    #size_hint_y:0.9
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Crime\n    #Sceen 3"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1322"
+
+<ThirteenthWindow22>:
+    name:'1322'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nYou have entered the crime room\n\nOBJECTIVE: Find the killer\n\nthere is a body lying on the ground, she has worn a blue dress and\n\nshe is holding keys in her hands that \n\nseem like house keys.\n\nClue:Her room and walk in closet were quite messy \n\nnot like a room which was unattended for a few days"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current='1323'
+
+<ThirteenthWindow23>:
+    name:'1323'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThere are Three suspects her husband, the neighbour and the maid.\n\nwho would you like to investigate??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt26
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<ThirteenthWindow24>:
+    name:'1324'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe Husband seems to have no idea how this happened\n\nAlisha:is anything missing??\n\nHusband:Yes, a total of 1,00,000$ is missing along with some jewelery\n\nDr.Sinha:and what about your marriage\n\nHusband:we were happily married\n\nand later he also mentions that she was coming back from a trip\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt27
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow25>:
+    name:'1325'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe neighbour calls himself her bestfriend\n\nHe mentions that Sara and her husband were not in good terms\n\nDr.Sinha:What do you mean??\n\nNeighbour: she used to tell how they used to fight all the time\n\nLater you find a paper where you get to know\n\nthat the neighbour her bestfriend actually\n\nInherits her shares a bit\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt28
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow26>:
+    name:'1326'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe maid once was caught before stealing\n\nKnown to be a greedy lady\n\nWhen talked to she denied the dispute between Sara and her husband\n\nAlisha:You know right that 1,00,000$ is also missing\n\nshe starts crying\n\nMaid:I got my lesson last time which was years ago I won't\n\ndo something like that again to my boss\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt29
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow27>:
+    name:'1327'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nWho do you think killed Sara Williamson??\n\nThink wisely you have only 2 chances"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt30
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow28>:
+    name:'1328'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE GUESSED THE RIGHT ANSWER\n\n\nYOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Alisha| Dr.Sinha):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt31
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow29>:
+    name:'1329'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE DIED!!\n\nThe killer was: Husband\n\n\nGame Ended"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<ThirteenthWindow31>: #alisha and Emma
+    name:'1331'
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Crime\n    #Sceen 3"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1332"
+
+<ThirteenthWindow32>:
+    name:'1332'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nYou have entered the crime room\n\nOBJECTIVE: Find the killer\n\nthere is a body lying on the ground, she has worn a blue dress and\n\nshe is holding keys in her hands that \n\nseem like house keys.\n\nClue:Her room and walk in closet were quite messy \n\nnot like a room which was unattended for a few days"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current='1333'
+
+<ThirteenthWindow33>:
+    name:'1333'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThere are Three suspects her husband, the neighbour and the maid.\n\nwho would you like to investigate??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt32
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<ThirteenthWindow34>:
+    name:'1334'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe Husband seems to have no idea how this happened\n\nAlisha:is anything missing??\n\nHusband:Yes, a total of 1,00,000$ is missing along with some jewelery\n\nEmma:and what about your marriage\n\nHusband:we were happily married\n\nand later he also mentions that she was coming back from a trip\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt33
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow35>:
+    name:'1335'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe neighbour calls himself her bestfriend\n\nHe mentions that Sara and her husband were not in good terms\n\nAlisha:What do you mean??\n\nNeighbour: she used to tell how they\n\nused to fight all the time\n\nLater you find a paper where you get to know\n\nthat the neighbour her bestfriend actually\n\nInherits her shares a bit\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt34
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow36>:
+    name:'1336'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe maid once was caught before stealing\n\nKnown to be a greedy lady\n\nWhen talked to she denied the dispute between Sara and her husband\n\nEmma:You know right that 1,00,000$ is\n\nalso missing\n\nshe starts crying\n\nMaid:I got my lesson last time which was years ago I won't\n\ndo something like that again to my boss\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt35
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow37>:
+    name:'1337'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nWho do you think killed Sara Williamson??\n\nEmma:Wait let me think they all said contradicting stuffs\n\n but one thing the husband said the she was coming back where as\n\n her closet was quiet messy not like\n\n a room which was unattended for few days\n\nThink wisely you have only 2 chances"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt36
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+<ThirteenthWindow38>:
+    name:'1338'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE GUESSED THE RIGHT ANSWER\n\n\nYOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Alisha| Emma):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt37
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow39>:
+    name:'1339'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE DIED!!\n\nThe killer was: Husband\n\n\nGame Ended"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<ThirteenthWindow41>:#Emma and Dr.sinha
+    name:'1341'
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Crime\n    #Sceen 3"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1342"
+
+<ThirteenthWindow42>:
+    name:'1342'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nYou have entered the crime room\n\nOBJECTIVE: Find the killer\n\nthere is a body lying on the ground, she has worn a blue dress and\n\nshe is holding keys in her hands that \n\nseem like house keys.\n\nClue:Her room and walk in closet were quite messy \n\nnot like a room which was unattended for a few days"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current='1343'
+
+<ThirteenthWindow43>:
+    name:'1343'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThere are Three suspects her husband, the neighbour and the maid.\n\nwho would you like to investigate??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt38
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<ThirteenthWindow44>:
+    name:'1344'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe Husband seems to have no idea how this happened\n\nDr.Sinha:is anything missing??\n\nHusband:Yes, a total of 1,00,000$ is missing along with some jewelery\n\nEmma:and what about your marriage\n\nHusband:we were happily married\n\nand later he also mentions that she was coming back from a trip\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt39
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow45>:
+    name:'1345'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe neighbour calls himself her bestfriend\n\nHe mentions that Sara and her husband were not in good terms\n\nEmma:What do you mean??\n\nNeighbour: she used to tell how they\n\nused to fight all the time\n\nLater you find a paper where you get to know\n\nthat the neighbour her bestfriend actually\n\nInherits her shares a bit\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt40
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow46>:
+    name:'1346'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe maid once was caught before stealing\n\nKnown to be a greedy lady\n\nWhen talked to she denied the dispute between Sara and her husband\n\nEmma:You know right that 1,00,000$ is\n\nalso missing\n\nshe starts crying\n\nMaid:I got my lesson last time which was years ago I won't\n\ndo something like that again to my boss\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt41
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow47>:
+    name:'1347'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nWho do you think killed Sara Williamson??\n\nEmma:Wait let me think they all said contradicting stuffs\n\n but one thing the husband said the she was coming back where as\n\n her closet was quiet messy not like\n\n a room which was unattended for few days\n\nThink wisely you have only 2 chances"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt42
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow48>:
+    name:'1348'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE GUESSED THE RIGHT ANSWER\n\n\nYOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Emma| Dr.Sinha):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt43
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow49>:
+    name:'1349'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE DIED!!\n\nThe killer was: Husband\n\n\nGame Ended"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<ThirteenthWindow51>: #Emma and Winston
+    name:'1351'
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Crime\n    #Sceen 3"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1352"
+
+<ThirteenthWindow52>:
+    name:'1352'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nYou have entered the crime room\n\nOBJECTIVE: Find the killer\n\nthere is a body lying on the ground, she has worn a blue dress and\n\nshe is holding keys in her hands that \n\nseem like house keys.\n\nClue:Her room and walk in closet were quite messy \n\nnot like a room which was unattended for a few days"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current='1353'
+
+<ThirteenthWindow53>:
+    name:'1353'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThere are Three suspects her husband, the neighbour and the maid.\n\nwho would you like to investigate??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt44
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<ThirteenthWindow54>:
+    name:'1354'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe Husband seems to have no idea how this happened\n\nWinston:is anything missing??\n\nHusband:Yes, a total of 1,00,000$ is missing along with some jewelery\n\nEmma:and what about your marriage\n\nHusband:we were happily married\n\nand later he also mentions that she was coming back from a trip to her brother's house\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt45
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow55>:
+    name:'1355'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe neighbour calls himself her bestfriend\n\nHe mentions that Sara and her husband were not in good terms\n\nEmma:What do you mean??\n\nNeighbour: she used to tell how they used to fight all the time\n\nLater you find a paper where you get to know\n\nthat the neighbour her bestfriend actually\n\nInherits her shares a bit\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt46
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow56>:
+    name:'1356'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe maid once was caught before stealing\n\nKnown to be a greedy lady\n\nWhen talked to she denied the dispute between Sara and her husband\n\nEmma:You know right that 1,00,000$ is also missing\n\nshe starts crying\n\nMaid:I got my lesson last time which was years ago I won't\n\ndo something like that again to my boss\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt47
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow57>:
+    name:'1357'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nWho do you think killed Sara Williamson??\n\nEmma:Wait let me think they all said contradicting stuffs\n\n but one thing the husband said the she was coming back where as\n\n her closet was quiet messy not like\n\n a room which was unattended for few days\n\nThink wisely you have only 2 chances"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt48
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow58>:
+    name:'1358'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE GUESSED THE RIGHT ANSWER\n\n\nYOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Emma| Winston):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt49
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow59>:
+    name:'1359'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE DIED!!\n\nThe killer was: Husband\n\n\nGame Ended"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<ThirteenthWindow61>:# dr. and Winston
+    name:'1361'
+    halign:"left"
+    valign:"top"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'escape2.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:50
+        spacing:10
+        Label:
+            text:"Crime\n    #Sceen 3"
+            font_size:78
+            font_name:"novem___.ttf"
+
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current="1362"
+
+<ThirteenthWindow62>:
+    name:'1362'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nYou have entered the crime room\n\nOBJECTIVE: Find the killer\n\nthere is a body lying on the ground, she has worn a blue dress and\n\nshe is holding keys in her hands that \n\nseem like house keys.\n\nClue:Her room and walk in closet were quite messy \n\nnot like a room which was unattended for a few days"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:app.root.current='1363'
+
+<ThirteenthWindow63>:
+    name:'1363'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThere are Three suspects her husband, the neighbour and the maid.\n\nwho would you like to investigate??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt50
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+
+<ThirteenthWindow64>:
+    name:'1364'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe Husband seems to have no idea how this happened\n\nSinha:is anything missing??\n\nHusband:Yes, a total of 1,00,000$ is\n\n missing along with some jewelery\n\nDr.Sinha:and what about your marriage\n\nHusband:we were happily married\n\nand later he also mentions that she was coming back from a trip to her brother's house\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt51
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow65>:
+    name:'1365'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe neighbour calls himself her bestfriend\n\nHe mentions that Sara and her husband were not in good terms\n\nDr.Sinha:What do you mean??\n\nNeighbour: she used to tell how they\n\n used to fight all the time\n\nLater you find a paper where you get to know\n\nthat the neighbour her bestfriend actually\n\nInherits her shares a bit\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt52
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow66>:
+    name:'1366'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nThe maid once was caught before stealing\n\nKnown to be a greedy lady\n\nWhen talked to she denied the dispute between Sara and her husband\n\nWinston:You know right that 1,00,000$ is\n\n also missing\n\nshe starts crying\n\nMaid:I got my lesson last time which was years ago I won't\n\ndo something like that again to my boss\n\nWould you like to investigate more??"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt53
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow67>:
+    name:'1367'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\nWho do you think killed Sara Williamson??\n\nThink wisely you have only 2 chances"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt54
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow68>:
+    name:'1368'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE GUESSED THE RIGHT ANSWER\n\n\nYOU HAVE COMPLETED THIS ROOM\n\nNOW IT'S TIME TO ELIMINATE A PLAYER\n\nWho will you eliminate? (Dr.Sinha| Winston):"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt55
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<ThirteenthWindow69>:
+    name:'1369'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'crime.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU HAVE DIED!!\n\nThe killer was: Husband\n\n\nGame Ended"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow11>:# Alisha Alive
+    name:'alisha1'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nAlisha: Well now this is tough,\n\n How about this; I'll give your family $200000 and they can\n\n live in luxury but all you have to do is let me win,\n\n what do you think??\n\n\n1.Give up and let Alisha win\n\n2.Get ready for a battle"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt56
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<FourteenthWindow12>:
+    name:'alisha2'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nAlisha: Oh thank god, you made this quick, well this\n\nis good bye and do not worry, your family is in safe hands\n\n\nWHILE THE LIGHTS START TO FADE ALISHA OPENS THE EXIT DOOR\n\nAlisha: Well money really can buy happiness hahahahahah\n\n\nGAME LOST BUT RESPECT EARNED"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow13>:
+    name:'alisha3'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nWell you cannot let her win this easily\n\nAlisha: Do not worry, I wont be easy on you, after all I am a MMA fighter hahahaha\n\n\n1.Ask if the $200000 still in the offer\n\n2.So what, let fate play its hand and let the battle begin"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt57
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<FourteenthWindow14>:
+    name:'alisha4'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nAlisha: Oh thank god, you made this quick, well this is\n\ngood bye and do not worry, your family is in safe hands\n\n\nWHILE THE LIGHTS START TO FADE AND ALISHA OPENS THE EXIT DOOR\n\nAlisha: Well money really can buy happiness hahahahahah\n\nGAME LOST"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow15>:
+    name:'alisha5'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nAlisha tries cornering you to a tree\n\n\n1.Run away\n\n2.Dodge Alisha and try your luck"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+        TextInput:
+            id:opt58
+            multiline:False
+            pos_hint:{'center_x':0.25,'center_y':0.5}
+            valign:"top"
+            halign:"left"
+            #padding_y:(50,50)
+            size_hint:(0.5,0.1)
+            background_color:'#808080'
+            font_color:'#000000'
+            font_size:24
+            font_name:"novem___.ttf"
+        Button:
+            text:"Enter"
+            font_name:"novem___.ttf"
+            font_size:32
+            background_color:0,0,0,0
+            font_color:'#808080'
+            pos_hint:{"center_x":0.9}
+            size_hint:(0.3,0.15)
+            on_release:root.on_button_click()
+
+<FourteenthWindow16>:
+    name:'alisha6'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU TRY MOVING AWAY BUT TRIP ON ROCK AND HIT YOUR HEAD\n\nAlisha: Well that was easy\n\nALISHA WINS\n\nYOU HAVE LOST THE GAME"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow17>:
+    name:'alisha7'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nYOU ARE NOW TRAPPED IN A CORNER\n\nYou search around and find a branch\n\nand with the help of that you hit her head\n\nAlisha falls on the ground\n\nYOUR CHOICES AFFECT YOUR FUTURE...\n\n\nYOU HAVE WON THE GAME"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow2>:
+    name:'emma'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nEmma: Oh now this is really tough, well i guess since this is the end,\n\nyou should know if you had'nt noticed, I'm actually not unemployed;\n\nI am a secert agent and it is my duty to keep the new generation alive\n\nYou:Wow, all my respect goes to you, I cannot thank you enough for this...\n\n\nYOUR CHOICES AFFECT YOUR FUTURE...\n\nYOU HAVE WON THE GAME"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow3>:
+    name:'Sinha'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nDr.Sinha: I cant let you win, I am sorry but I have more to life then you ever will...\n\nDR.SINHA PULLS OUT HIS SCAPEL\n\nDr.Sinha: Hahahahaha you really thought I would need to use a scapel to fix an ECG monitor, what a fool\n\n\nDr.Sinha Wins\n\nYOU HAVE LOST THE GAME"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+<FourteenthWindow4>:
+    name:'winston'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'forest.png'
+    BoxLayout:
+        orientation:"vertical"
+        size:root.width, root.height
+        padding:20
+        spacing:50
+        Label:
+            text:"\n\n\nWinston: Oh well, you are so young, you have a long way to go,\n\nyou can win after all I have lived for so long\n\nYou:Wow, all my respect goes to you, I cannot thank you enough for this...\n\n\nYOUR CHOICES AFFECT YOUR FUTURE...\n\nYOU HAVE WON THE GAME"
+            text_size:self.size
+            halign:"left"
+            valign:"top"
+            font_size:24
+            font_name:"Pixeboy.ttf"
+
+
+
+
